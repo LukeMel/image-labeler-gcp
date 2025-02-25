@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Labels</title>
+</head>
+<body>
+    <h1>Detected Labels:</h1>
+    <ul>
+        <% labels.forEach(function(label) { %>
+            <li><%= label %></li>
+        <% }); %>
+    </ul>
+    <img src="/uploads/<%= imagePath %>" alt="Uploaded Image" style="max-width: 400px;">
+    <a href="/">Upload another image</a>
+</body>
+</html>
